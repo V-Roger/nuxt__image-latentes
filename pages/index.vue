@@ -13,16 +13,16 @@
     <section class="content">
       <ul class="content-platforms">
         <li>
-          <i class="fab fa-soundcloud" />
+          <a href="https://soundcloud.com/images-latentes" alt="Images latentes sur Soundcloud"><i class="fab fa-soundcloud" /></a>
+        </li>
+        <!-- <li>
+          <a href="" alt=""><i class="fab fa-spotify" /></a>
+        </li> -->
+        <li>
+          <a href="https://www.facebook.com/images.latentes.podcast" alt="Images latentes sur Facebook"><i class="fab fa-facebook" /></a>
         </li>
         <li>
-          <i class="fab fa-spotify" />
-        </li>
-        <li>
-          <i class="fab fa-facebook" />
-        </li>
-        <li>
-          <i class="fab fa-instagram" />
+          <a href="https://www.instagram.com/images_latentes/" alt="Images latentes sur Instagram"><i class="fab fa-instagram" /></a>
         </li>
       </ul>
       <iframe
@@ -101,6 +101,19 @@ export default {
       & li {
         font-size: 5em;
         padding: 24px;
+
+        & a {
+          padding: 24px;
+          border: 2px solid transparent;
+          border-radius: 3px;
+
+          &:hover,
+          &:focus {
+            border-top-color: red;
+            border-bottom-color: red;
+            color: red;
+          }
+        }
       }
     }
   }
