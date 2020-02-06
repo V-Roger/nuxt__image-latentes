@@ -61,7 +61,7 @@ export default {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
@@ -88,6 +88,7 @@ export default {
     color: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    padding-bottom: 80px;
 
     .content-platforms {
       list-style-type: none;
