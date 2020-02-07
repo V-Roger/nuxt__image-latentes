@@ -11,8 +11,8 @@
     </section>
     <hr class="divider">
     <masonry
-      :cols="5"
-      :gutter="8"
+      :cols="{default: 5, 1000: 3, 700: 2, 400: 1}"
+      :gutter="'8px'"
       class="gallery"
     >
       <img v-for="photo in photos" :key="photo" :src="photo.pathLong">
@@ -33,7 +33,7 @@
         </li>
       </ul>
       <iframe
-        width="50%"
+        width="90%"
         height="166"
         scrolling="no"
         frameborder="no"
@@ -87,6 +87,10 @@ export default {
     justify-content: center;
     align-items: center;
     justify-items: center;
+
+    @media all and (max-width: 1000px) {
+      padding: 24px;
+    }
   }
 
   section.header {
@@ -131,6 +135,10 @@ export default {
       & li {
         font-size: 5em;
         padding: 24px;
+
+        @media all and (max-width: 800px) {
+          font-size: 3em;
+        }
 
         & a {
           padding: 24px;
