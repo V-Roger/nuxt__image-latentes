@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-masonry-css'
   ],
   /*
   ** Nuxt.js dev-modules

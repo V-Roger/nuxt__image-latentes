@@ -10,6 +10,13 @@
       </h2>
     </section>
     <hr class="divider">
+    <masonry
+      :cols="5"
+      :gutter="8"
+      class="gallery"
+    >
+      <img v-for="photo in photos" :key="photo" :src="photo.pathLong">
+    </masonry>
     <section class="content">
       <ul class="content-platforms">
         <li>
@@ -43,6 +50,18 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data: () => ({
+    photos: []
+  }),
+  mounted () {
+    this.importAll(require.context('../assets/photos', true, /\.jpg$/))
+  },
+
+  methods: {
+    importAll (r) {
+      r.keys().forEach(key => (this.photos.push({ pathLong: r(key), pathShort: key })))
+    }
   }
 }
 </script>
@@ -81,6 +100,12 @@ export default {
     height: 5vh;
     background: #868E96;
     z-index: -1;
+  }
+
+  .gallery {
+    padding-top: 24px;
+    width: 100%;
+    background: #212529;
   }
 
   section.content {
