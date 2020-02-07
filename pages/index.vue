@@ -103,6 +103,10 @@ export default {
   }
 
   .gallery {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 24px;
+    left: 8px;
     padding-top: 24px;
     width: 100%;
     background: #212529;
