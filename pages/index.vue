@@ -164,6 +164,7 @@ export default {
     & blockquote {
       position: relative;
       top: 5em;
+      max-width: 80vw;
 
       &:before {
         content: '“';
@@ -193,6 +194,19 @@ export default {
         margin-left: 16px;
         margin-top: 8px;
         border-left: 4px solid white;
+      }
+
+      @media all and (max-width: 800px) {
+        max-width: calc(80vw - 4em);
+        margin-bottom: 5em;
+
+        &:before {
+          left: 0;
+        }
+
+        &:after {
+          right: 0;
+        }
       }
     }
   }
