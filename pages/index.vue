@@ -40,6 +40,12 @@
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/753753574%3Fsecret_token%3Ds-rEAjW&color=%23495057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
       />
+      <blockquote cite="http://daviddarle.com/">
+        <p>
+          Voilà ben c'est vraiment ça la photo hein, là on est en plein dedans, c'est vraiment écrire avec la lumière quoi.
+        </p>
+        <footer>David Darle, <cite>Images Latentes épisode 00</cite></footer>
+      </blockquote>
     </section>
   </main>
 </template>
@@ -122,6 +128,7 @@ export default {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding-bottom: 80px;
+    justify-content: space-evenly;
 
     .content-platforms {
       list-style-type: none;
@@ -152,6 +159,40 @@ export default {
             color: red;
           }
         }
+      }
+    }
+    & blockquote {
+      position: relative;
+      top: 5em;
+
+      &:before {
+        content: '“';
+        display: block;
+        position: absolute;
+        left: -1em;
+        top: -1em;
+        font-size: 3em;
+      }
+
+      &:after {
+        content: '”';
+        display: block;
+        position: absolute;
+        right: -1em;
+        bottom: -1em;
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.6em;
+      }
+
+      footer {
+        font-size: 1em;
+        padding: 8px 16px;
+        margin-left: 16px;
+        margin-top: 8px;
+        border-left: 4px solid white;
       }
     }
   }
