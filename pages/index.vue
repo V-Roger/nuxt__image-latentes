@@ -32,17 +32,22 @@
           <a href="https://www.instagram.com/images_latentes/" alt="Images latentes sur Instagram"><i class="fab fa-instagram" /></a>
         </li>
       </ul>
-      <iframe
+      <h2>
+        Coming soon !
+        <br>
+        <small>En plein montage...</small>
+      </h2>
+      <!-- <iframe
         width="90%"
         height="166"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/753753574%3Fsecret_token%3Ds-rEAjW&color=%23495057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      />
+      /> -->
       <blockquote cite="http://daviddarle.com/">
         <p>
-          Voilà ben c'est vraiment ça la photo hein, là on est en plein dedans, c'est vraiment écrire avec la lumière quoi.
+          Voilà c'est vraiment ça la photo hein, là on est en plein dedans, c'est vraiment écrire avec la lumière.
         </p>
         <footer>David Darle, <cite>Images Latentes épisode 00</cite></footer>
       </blockquote>
@@ -129,6 +134,10 @@ export default {
     border-bottom-right-radius: 8px;
     padding-bottom: 80px;
     justify-content: space-evenly;
+
+    h2 {
+      font-size: 2em;
+    }
 
     .content-platforms {
       list-style-type: none;
