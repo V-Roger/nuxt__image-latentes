@@ -32,19 +32,14 @@
           <a href="https://www.instagram.com/images_latentes/" alt="Images latentes sur Instagram"><i class="fab fa-instagram" /></a>
         </li>
       </ul>
-      <h2>
-        Coming soon !
-        <br>
-        <small>En plein montage...</small>
-      </h2>
-      <!-- <iframe
+      <iframe
         width="90%"
         height="166"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/753753574%3Fsecret_token%3Ds-rEAjW&color=%23495057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      /> -->
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/762254818&color=%23646c6c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      />
       <blockquote cite="http://daviddarle.com/">
         <p>
           Voilà c'est vraiment ça la photo hein, là on est en plein dedans, c'est vraiment écrire avec la lumière.
